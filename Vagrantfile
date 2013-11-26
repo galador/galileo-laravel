@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 22,   host: 2222, id: "ssh"
   config.vm.network "forwarded_port", guest: 80,   host: 8080, id: "web"
   config.vm.network "forwarded_port", guest: 5432, host: 5433, id: "psql"
-# config.vm.network "forwarded_port", guest: 3306, host: 3307, id: "mysql"
+  config.vm.network "forwarded_port", guest: 3306, host: 3307, id: "mysql"
   
   config.vm.synced_folder ".", "/vagrant", :mount_options => ["dmode=777","fmode=666"]
 

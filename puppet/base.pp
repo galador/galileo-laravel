@@ -13,7 +13,7 @@ include bootstrap
 include git
 include nginx
 include phpfpm
-#include mysql
+include mysql
 include postgresql
 include composer
 include laravel
