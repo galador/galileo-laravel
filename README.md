@@ -1,4 +1,4 @@
-# Galileo (Laravel)
+# Laravel
 
 This repo houses the Puppet manifests and Vagrantfile that we use for local Laravel 4 based development on Mac OS X.
 
