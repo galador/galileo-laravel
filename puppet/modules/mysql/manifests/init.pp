@@ -1,19 +1,23 @@
 class mysql 
 {
+    $password = 'vagrant'
 
-    $password = 'v4gr4nt'
+	exec { 'updateapt-mysql': 
+	    command => '/usr/bin/apt-get update'
+	}
 
     package
     {
         "php5-mysql":
-            ensure => present
+            ensure => present,
+			require => Exec['updateapt-mysql']
     }
 
     package 
     { 
         "mysql-server":
             ensure  => present,
-            require => [ Package['php5-mysql'] ]
+            require => [ Package['php5-mysql'], Exec['updateapt-mysql'] ]
     }
 
     service 
