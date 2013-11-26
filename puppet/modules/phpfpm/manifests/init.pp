@@ -1,7 +1,4 @@
 class phpfpm {
-
-
-
 	exec { 'updateapt-php': 
 	    command => '/usr/bin/apt-get update'
 	}
@@ -71,5 +68,4 @@ class phpfpm {
 	    subscribe  => File['/etc/php5/fpm/pool.d/www.conf'],
 	    require => Package['php5-fpm'],
 	}
-
 }
