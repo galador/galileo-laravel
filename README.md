@@ -1,6 +1,6 @@
 # Laravel
 
-This repo houses the Puppet manifests and Vagrantfile that we use for local Laravel 4 based development on Mac OS X.
+This repo houses the Puppet manifests and Vagrantfile that we use for local Laravel 4 based development on Mac OS X. This project is based on some original work by [bureaublank/galileo-laravel](https://github.com/bureaublank/galileo-laravel).
 
 ### Puppet manifests included:
 - NGINX
@@ -27,6 +27,6 @@ This repo houses the Puppet manifests and Vagrantfile that we use for local Lara
 3. **This will start the process. It may take a while depending on your connection!**   
 A few things are happening: First, it's downloading an Ubuntu 12.04 Precise32 box if you don't already have it. After that's done, the box will boot and Puppet will provision the empty box with the stack described above. 
 
-4. Once it's all done, just go to [http://localhost:8888](http://localhost:8888) in a web browser and you should see the default Laravel 4 "Hello World!" page. 
+4. Once it's all done, just go to [http://localhost:8080](http://localhost:8080) in a web browser and you should see the default Laravel 4 "Hello World!" page. 
 
 5. **The www/ folder where you clone the repo is the web root shared with the virtual machine and where Laravel was installed into. **
