@@ -30,4 +30,4 @@ A few things are happening: First, it's downloading an Ubuntu 12.04 Precise32 bo
 
 4. Once it's all done, just go to [http://localhost:8080](http://localhost:8080) in a web browser and you should see the default Laravel 4 "Hello World!" page. 
 
-5. **The www/ folder where you clone the repo is the web root shared with the virtual machine and where Laravel was installed into. **
+5. **The www/ folder where you clone the repo is the web root shared with the virtual machine and where Laravel was installed into.**
