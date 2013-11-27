@@ -6,6 +6,7 @@ This repo houses the Puppet manifests and Vagrantfile that we use for local Lara
 - NGINX
 - PHP-FPM (extensions: mcrypt, cli, apc, xdebug, apc)
 - PostgreSQL
+- MySQL (root pw: vagrant)
 - Composer
 - Laravel 4
 
